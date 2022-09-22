@@ -1,13 +1,20 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
-    background: #FFFFFF;
+    background: var(--second-color);
 }
 
 :root {
     --main-color: #212121;
     --paragraph-color: #757575;
-}
+    --accent-color: #2196F3;
+    --second-color: #FFFFFF;
+    --dark-color: #000000;
+    --herobackground-color: #2F303A;
+    --teambackground-color: #F5F4FA;
+    --footerbackground-color: #2F303A;
+
+ }
 
 
 .list {
@@ -25,29 +32,28 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    color:var(--dark-color);
     text-decoration: none;
 }
 
 .logoweb {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .header-link:hover,
 .header-link:focus,
 .contact_link:hover,
 .contact_link:focus {
-    color: #2196F3
+    color: var(--accent-color)
 }
 
 
-.header-item {
+.header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    cursor: pointer;
-    color: #212121;
+    color: var(--main-color);
 }
 
 .contact_link {
@@ -55,12 +61,12 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--paragraph-color);
 }
 
 /* -------HERO------- */
 .hero {
-    background: #2F303A;
+    background: var(--herobackground-color);
 }
 
 .hero-title {
@@ -81,11 +87,15 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--second-color);
     cursor: pointer;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.btn {
+    font-family: inherit;
 }
 
 /* -------BENEFITS------- */
@@ -133,7 +143,7 @@ body {
 /* -------TEAM------- */
 
 .team {
-    background: #F5F4FA;
+    background: var(--teambackground-color);
 }
 
 .team-title {
@@ -145,12 +155,14 @@ body {
     color: var(--main-color);
 }
 
-.team-list {}
 
+.team-item {
+    background: var(--second-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
-.team-item {}
-
-.text-item-title {
+.team-item-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -170,7 +182,7 @@ body {
 /* --------FOOTER------- */
 
 .footer {
-    background: #2F303A;
+    background: var(--footerbackground-color);
 }
 
 .footer-link {
@@ -178,11 +190,11 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 .footer-web {
-    color: #2196F3;
+    color:var(--accent-color);
 }
 
 .footer-address {
@@ -197,7 +209,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--second-color);
 }
 
 .footer-contact_link {
@@ -211,7 +223,7 @@ body {
 .footer-link-map:focus,
 .footer-contact_link:hover,
 .footer-contact_link:focus {
-    color: #2196F3
+    color: var(--accent-color)
 }
 
 
@@ -222,7 +234,6 @@ body {
 .filters-list {}
 
 .filters-item {
-    background: #F5F4FA;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
@@ -234,10 +245,10 @@ body {
 
 .button:hover,
 .button:focus {
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    color: #FFFFFF;
+    color:var(--second-color);
     cursor: pointer;
 }
 
